@@ -11,20 +11,15 @@ The data and source code are distributed under the terms of the MIT license. Our
 - We perform a comparison ofZeusagainst a commerciallive 360°video streaming system built on Ricoh Theta Vand YouTube and validate that our measurement results arerepresentative of real world systems 
 
 To cite our paper, use this Bibtex code:
-
+...
 > @inproceedings{junyi and zhisheng yan,
-
-  title={An Analysis of Delay in Live 360° Video Streaming Systems},
-  
+  title={An Analysis of Delay in Live 360° Video Streaming Systems}, 
   author={Yi, Jun and Islam, Md Reazul and Aggarwal, Shivang and Koutsonikolas, Dimitrios, and Hu, Y Charlie and Yan, Zhisheng},
-  
   booktitle={Proceedings of the 28th ACM International Conferenceon Multimedia (MM ’20)},
-  
   year={2020},
-  
   organization={ACM}
 }
-
+...
 
 # Paper abstract
 While live 360° video streaming provides an enriched viewing experience, it is challenging to guarantee the user experience against the negative effects introduced by start-up delay, event-to-eye delay, and low frame rate. It is therefore imperative to understand how different computing tasks of a live 360° streaming system contribute
