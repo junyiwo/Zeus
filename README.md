@@ -13,10 +13,15 @@ The data and source code are distributed under the terms of the MIT license. Our
 To cite our paper, use this Bibtex code:
 
 > @inproceedings{junyi and zhisheng yan,
+
   title={An Analysis of Delay in Live 360° Video Streaming Systems},
+  
   author={Yi, Jun and Islam, Md Reazul and Aggarwal, Shivang and Koutsonikolas, Dimitrios, and Hu, Y Charlie and Yan, Zhisheng},
+  
   booktitle={Proceedings of the 28th ACM International Conferenceon Multimedia (MM ’20)},
+  
   year={2020},
+  
   organization={ACM}
 }
 
