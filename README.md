@@ -19,4 +19,4 @@ To cite our paper, use this Bibtex code:
 This project is licensed under the terms of the MIT license.
 
 # Contact
-If you have any general doubt about our work, please use the public issues section on this github. Alternatively, drop us an e-mail at <mailto:jyi39@student.gsu.edu>
+If you have any general doubt about our work, please use the public issues section on this github. Alternatively, drop us an e-mail at <mailto:jyi39@student.gsu.edu> or <mailto:zyan@gsu.edu>
