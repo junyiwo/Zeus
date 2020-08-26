@@ -9,4 +9,14 @@ The data and source code are distributed under the terms of the MIT license. Our
 - We build an open research prototypeZeususing publiclyavailable hardware and software to enable task-level delaymeasurement. The methodology for buildingZeuscan beutilized in future 360° video research.
 - We leverageZeusto perform a comprehensive measurementstudy to dissect the time consumption in live 360°videostreaming and understand how each task affects differentdelay metrics.
 - We perform a comparison ofZeusagainst a commerciallive 360°video streaming system built on Ricoh Theta Vand YouTube and validate that our measurement results arerepresentative of real world systems 
+
 To cite our paper, use this Bibtex code:
+
+
+# Paper abstract
+
+# License
+This project is licensed under the terms of the MIT license.
+
+# Contact
+If you have any general doubt about our work, please use the public issues section on this github. Alternatively, drop us an e-mail at <mailto:jyi39@student.gsu.edu>
