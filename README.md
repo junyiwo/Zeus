@@ -37,6 +37,22 @@ Charger: USB Wall Charger
 HDMI cable: UGREEN Micro HDMI Cable
 
 # Requirement & installation 
+For the camera conponent,
+
+1.  Download VRWorks 360 Video SDk.
+
+2. Download Microsoft Visual Studio.
+
+For the server,
+
+Download Nginx-1.16.1
+
+For the client component,
+
+Download Three.js and Flv.js 
+
+
+
 
 # License
 This project is licensed under the terms of the MIT license.
