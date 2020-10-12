@@ -27,9 +27,13 @@ to these three delay metrics. Although prior works have studied commercial live 
 
 # Hardware configureation
 Camera: GoPro Hero 6 using HDMI ouput
+
 Data converter: USB Capture 4K Plus
+
 USB HubUSB Type-C Multi-Adapter
+
 Charger: USB Wall Charger
+
 HDMI cable: UGREEN Micro HDMI Cable
 
 # Requirement & installation 
