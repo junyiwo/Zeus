@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The rotation can be specified with the m*, *_deg, or *_rad.
+If several specifications are supplied, the yaw-pitch-roll will take precedence. -->
+<rig coord_axes="z-up" rig_diameter_cm="9.5">
+    <camera width="1024" height="768" layout="equatorial">
+        <input_calib_file name="camera5.jpg"/>
+        <pose>
+            <rotation yaw_deg ="-72" pitch_deg ="0.0" roll_deg="-90.0" />
+            <translation x_cm="0.0" y_cm="0.0" z_cm="0.0"/>
+        </pose>
+        <optics>
+            <focal_length focal_pixels="420"/>
+            <principal_point center_offset_x="0.0" center_offset_y="0.0"/>
+            <lens type="fisheye" k1="0.0" k2="0.0" k3="0.0" k4="0.0"/>
+        </optics>
+        <input_media_feed>
+            <input_media_form form="file" />
+            <input_media_file name="camera5.jpg"  fps="30" width="1024" height="768"/>
+        </input_media_feed>
+    </camera>
+    <camera width="1024" height="768" layout="equatorial">
+        <input_calib_file name="camera4.jpg"/>
+        <pose>
+            <rotation yaw_deg="-144" pitch_deg="0.0" roll_deg="-90.0" />
+            <translation x_cm="0.0" y_cm="0.0" z_cm="0.0"/>
+        </pose>
+        <optics>
+            <focal_length focal_pixels="420"/>
+            <principal_point center_offset_x="0.0" center_offset_y="0.0"/>
+            <lens type="fisheye" k1="0.0" k2="0.0" k3="0.0" k4="0.0"/>
+        </optics>
+        <input_media_feed>
+            <input_media_form form="file" />
+            <input_media_file name="camera4.jpg"  fps="30" width="1024" height="768"/>
+        </input_media_feed>
+    </camera>
+    <camera width="1024" height="768" layout="equatorial">
+        <input_calib_file name="camera3.jpg"/>
+        <pose>
+            <rotation yaw_deg="144" pitch_deg="0.0" roll_deg="-90.0" />
+            <translation x_cm="0.0" y_cm="0.0" z_cm="0.0"/>
+        </pose>
+        <optics>
+            <focal_length focal_pixels="420"/>
+            <principal_point center_offset_x="0.0" center_offset_y="0.0"/>
+            <lens type="fisheye" k1="0.0" k2="0.0" k3="0.0" k4="0.0"/>
+        </optics>
+        <input_media_feed>
+            <input_media_form form="file" />
+            <input_media_file name="camera3.jpg"  fps="30" width="1024" height="768"/>
+        </input_media_feed>
+    </camera>
+    <camera width="1024" height="768" layout="equatorial">
+        <input_calib_file name="camera2.jpg"/>
+        <pose>
+            <rotation yaw_deg="72" pitch_deg="0.0" roll_deg="-90.0" />
+            <translation x_cm="0.0" y_cm="0.0" z_cm="0.0"/>
+        </pose>
+        <optics>
+            <focal_length focal_pixels="420"/>
+            <principal_point center_offset_x="0.0" center_offset_y="0.0"/>
+            <lens type="fisheye" k1="0.0" k2="0.0" k3="0.0" k4="0.0"/>
+        </optics>
+        <input_media_feed>
+            <input_media_form form="file" />
+            <input_media_file name="camera2.jpg"  fps="30" width="1024" height="768"/>
+        </input_media_feed>
+    </camera>
+    <camera width="1024" height="768" layout="equatorial">
+        <input_calib_file name="camera1.jpg"/>
+        <pose>
+            <rotation yaw_deg="0" pitch_deg="0.0" roll_deg="-90.0" />
+            <translation x_cm="0.0" y_cm="0.0" z_cm="0.0"/>
+        </pose>
+        <optics>
+            <focal_length focal_pixels="420"/>
+            <principal_point center_offset_x="0.0" center_offset_y="0.0"/>
+            <lens type="fisheye" k1="0.0" k2="0.0" k3="0.0" k4="0.0"/>
+        </optics>
+        <input_media_feed>
+            <input_media_form form="file" />
+            <input_media_file name="camera1.jpg"  fps="30" width="1024" height="768"/>
+        </input_media_feed>
+    </camera>
+
+       <camera width="1024" height="768" layout="equatorial">
+        <input_calib_file name="camera6.jpg"/>
+        <pose>
+            <rotation yaw_deg="108" pitch_deg="90.0" roll_deg="0" />
+            <translation x_cm="0.0" y_cm="0.0" z_cm="0.0"/>
+        </pose>
+        <optics>
+            <focal_length focal_pixels="420"/>
+            <principal_point center_offset_x="0.0" center_offset_y="0.0"/>
+            <lens type="fisheye" k1="0.0" k2="0.0" k3="0.0" k4="0.0"/>
+        </optics>
+        <input_media_feed>
+            <input_media_form form="file" />
+            <input_media_file name="camera6.jpg"  fps="30" width="1024" height="768"/>
+        </input_media_feed>
+    </camera>
+
+</rig>
+

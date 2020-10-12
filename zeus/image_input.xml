@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rig coord_axes="z-up" >
+	<camera width="1024" height="768">
+		<input_media_feed>
+			<input_media_form form="file"/>
+			<input_media_file name="camera5.jpg" fps_num="30" fps_den="3" width="1024" height="768"/>
+		</input_media_feed>
+	</camera>
+
+	<camera width="1024" height="768">
+		<input_media_feed>
+			<input_media_form form="file"/>
+			<input_media_file name="camera4.jpg" fps_num="30" fps_den="3" width="1024" height="768"/>
+		</input_media_feed>
+	</camera>
+
+
+	<camera width="1024" height="768">
+		<input_media_feed>
+			<input_media_form form="file"/>
+			<input_media_file name="camera2.jpg" fps_num="30" fps_den="3" width="1024" height="768"/>
+		</input_media_feed>
+	</camera>
+
+	<camera width="1024" height="768">
+		<input_media_feed>
+			<input_media_form form="file"/>
+			<input_media_file name="camera3.jpg" fps_num="30" fps_den="3" width="1024" height="768"/>
+		</input_media_feed>
+	</camera>
+<camera width="1024" height="768">
+		<input_media_feed>
+			<input_media_form form="file"/>
+			<input_media_file name="camera1.jpg" fps_num="30" fps_den="3" width="1024" height="768"/>
+		</input_media_feed>
+	</camera>
+
+
+<camera width="1024" height="768">
+		<input_media_feed>
+			<input_media_form form="file"/>
+			<input_media_file name="camera6.jpg" fps_num="30" fps_den="3" width="1024" height="768"/>
+		</input_media_feed>
+	</camera>
+</rig>
+
