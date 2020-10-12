@@ -26,6 +26,11 @@ While live 360° video streaming provides an enriched viewing experience, it is 
 to these three delay metrics. Although prior works have studied commercial live 360° video streaming systems, none of them has dug into the end-to-end pipeline and explored how the task-level time consumption affects the user experience. In this paper, we conduct the first in-depth measurement study of task-level time consumption for five system components in live 360° video streaming. We first identify the subtle relationship between the time consumption breakdown across the system pipeline and the three delay metrics. We then build a prototype Zeus to measure this relationship. Our findings indicate the importance of CPU-GPU transfer at the camera and the server initialization as well as the negligible effect of 360° video stitching on the delay metrics. We finally validate that our results are representative of real world systems by comparing them with those obtained with a commercial system.
 
 # Hardware configureation
+Camera: GoPro Hero 6 using HDMI ouput
+Data converter: USB Capture 4K Plus
+USB HubUSB Type-C Multi-Adapter
+Charger: USB Wall Charger
+HDMI cable: UGREEN Micro HDMI Cable
 
 # Requirement & installation 
 
