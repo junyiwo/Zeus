@@ -1,9 +1,8 @@
 # Zeus
-This README file contains the instructions to build our Zeus prototype:
+This README file contains the instructions to build our Zeus prototype. The source code is distributed under the terms of the MIT license.
 
 Jun Yi, Md Reazul Islam, Shivang Aggarwal, Dimitrios Koutsonikolas, Y. Charlie Hu and Zhisheng Yan. An Analysis of Delay in Live 360° Video Streaming Systems. In Proceedings of the 28th ACM International Conferenceon Multimedia (MM ’20), 2020. 
 
-The source code is distributed under the terms of the MIT license.
 
 
 
