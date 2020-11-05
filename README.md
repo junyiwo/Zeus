@@ -38,9 +38,13 @@ For the camera conponent,
 
 2. Download Microsoft Visual Studio.
 
+The major code is included in the folder "zeus". After buiding the project, jump to the 
+
 For the server,
 
-Download Nginx-1.16.1
+First, download Nginx-1.16.1 and Nginx-http-flv-module, and add the module to Nginx server. Then, configure the "nginx.conf" file to enable the live streaming function. You can take the "nginx.conf" in the Server folder as a reference. Please modify the IP address in the file. 
+
+
 
 For the client component,
 
