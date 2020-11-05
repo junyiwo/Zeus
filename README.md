@@ -43,17 +43,18 @@ For the **camera component**,
 
 The major code is included in the folder "zeus". They are mainly for video stitching. After buiding the project,
 
->> first, open the command prompt
+>> First, open the command prompt
 
 >> second, redirect the path to the executed file "X:\..\Release" (X is the disk name)
 
->> third, execute the command "project_name.exe --input_dir_base ..\..\ --rig_spec rig_spec_try.xml --image_input image_input.xml --out_file out_stitched.jpg"
+>> Third, execute the command "project_name.exe --input_dir_base ..\..\ --rig_spec rig_spec_try.xml --image_input image_input.xml --out_file out_stitched.jpg"
 
 For the **server**,
 
-First, download Nginx-1.16.1 and [Nginx-http-flv-module](https://github.com/winshining/nginx-http-flv-module), and add the module to Nginx when install the server. 
+>> First, download Nginx-1.16.1 and [Nginx-http-flv-module](https://github.com/winshining/nginx-http-flv-module), and add the module to Nginx when install the server. 
 
-Then, configure the "nginx.conf" file to enable the live streaming. You can take the "nginx.conf" in the Server folder as a reference. Please modify the IP address in the file. 
+>> Second, configure the "nginx.conf" file to enable the live streaming. You can take the "nginx.conf" in the Server folder as a reference. Please modify the IP address in the file. 
+>> Third, restart the Nginx server using command "./installation path of Nginx/nginx -s reload"
 
 
 
