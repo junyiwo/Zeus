@@ -32,6 +32,9 @@ Charger: USB Wall Charger. It is used to charge the camera while working
 HDMI cable: UGREEN Micro HDMI Cable
 
 # Requirement & installation 
+
+Before the camera tranfer the video stream to the server, make sure that the server is running and has been rightly configured. 
+
 For the camera conponent,
 
 1.  Download VRWorks 360 Video SDk.
@@ -42,13 +45,13 @@ The major code is included in the folder "zeus". After buiding the project, jump
 
 For the server,
 
-First, download Nginx-1.16.1 and Nginx-http-flv-module, and add the module to Nginx server. Then, configure the "nginx.conf" file to enable the live streaming function. You can take the "nginx.conf" in the Server folder as a reference. Please modify the IP address in the file. 
+First, download Nginx-1.16.1 and Nginx-http-flv-module, and add the module to Nginx when install the server. Then, configure the "nginx.conf" file to enable the live streaming. You can take the "nginx.conf" in the Server folder as a reference. Please modify the IP address in the file. 
 
 
 
 For the client component,
 
-Download Three.js and Flv.js to build the player. 
+All the files are included in the folder "Player", the "player.js" is a webpage player. It will play the requested 360 video when double clicked it. 
 
 # Citation
 To cite our paper, use this Bibtex code:
