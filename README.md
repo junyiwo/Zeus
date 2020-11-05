@@ -53,7 +53,7 @@ For the **server**,
 
 >> First, download Nginx-1.16.1 and [Nginx-http-flv-module](https://github.com/winshining/nginx-http-flv-module), and add the module to Nginx when install the server. 
 
->> Second, configure the "nginx.conf" file to enable the live streaming. You can take the "nginx.conf" in the Server folder as a reference. Please modify the IP address in the file. 
+>> Second, configure the "nginx.conf" file to enable the live streaming. You can take the "nginx.conf" in the "Server" folder as a reference. Please modify the IP address in the file. 
 >> Third, restart the Nginx server using command "./installation path of Nginx/nginx -s reload"
 
 
