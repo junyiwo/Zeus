@@ -6,6 +6,7 @@ Jun Yi, Md Reazul Islam, Shivang Aggarwal, Dimitrios Koutsonikolas, Y. Charlie H
 # What is Zeus
 
 Zeus is a prototype used to measure the delay of live 360 video streaming systems. Zeus will first capture regular video stream using six GoPro cameras, and stitch them into a 360 video using a laptop. After that, the 360 video will be transferred to the video server Nginx. The clients can send request to the video server to watch the live video. The system pipeline of Zeus can be divided into different tasks, and it allows developers to measure the time cnsumption of each task. 
+![Prototype](https://github.com/junyiwo/Zeus/blob/master/Image/prototype.png)
 
 
 
