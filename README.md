@@ -21,13 +21,13 @@ to these three delay metrics. Although prior works have studied commercial live 
 - We perform a comparison ofZeusagainst a commerciallive 360°video streaming system built on Ricoh Theta Vand YouTube and validate that our measurement results arerepresentative of real world systems 
 
 # Hardware configureation
-Camera: GoPro Hero 6 using HDMI ouput
+Camera: GoPro Hero 6 using HDMI ouput. 
 
-Data converter: USB Capture 4K Plus
+Data converter: USB Capture 4K Plus. The data converter is used to convert the HDMI ouput of the camera into USB, otherwise the cameras cannot connect with the laptop used for stitching.  
 
-USB HubUSB Type-C Multi-Adapter
+USB Hub: USB Type-C Multi-Adapter. Due to the limited USB data interfaces of the laptop, we also need to use the type-c interfaces to receive the USB data. 
 
-Charger: USB Wall Charger
+Charger: USB Wall Charger. It is used to charge the camera while working
 
 HDMI cable: UGREEN Micro HDMI Cable
 
@@ -44,7 +44,7 @@ Download Nginx-1.16.1
 
 For the client component,
 
-Download Three.js and Flv.js 
+Download Three.js and Flv.js to build the player. 
 
 # Citation
 To cite our paper, use this Bibtex code:
