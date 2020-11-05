@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Three.js - Video Texture</title>
+		
+		
+	</head>
+	<body>
+	     <canvas id="mycanvas" width="1000px" height="600px" ></canvas>
+		<script src="three.js"></script>
+		<script src="debugout.js"></script>
+		<script src="OrbitControls.js"></script>
+		<script type="text/javascript" src="stats.min.js"></script>
+	    <script src="flv.js"></script>
+        <video id="videoElement" class="centeredVideo" controls autoplay width="0" height="0">Your browser is too old which doesn't support HTML5 video.</video>
+
+    <br>
+    <div class="controls">
+        <!--<button onclick="flv_load()">Load</button>-->
+        <button onclick="flv_start()">start</button>
+        <button onclick="flv_pause()">suspend</button>
+        <button onclick="flv_destroy()">Stop it</button>
+        <input style="width:100px" type="text" name="seekpoint" />
+        <button onclick="flv_seekto()">Jump</button>
+	    <div id="Stats-output"></div>
+    </div>
+		<script>
+       
+		var stats = initStats();
+        var start_preprocess1 = performance.now();
+		var scene = new THREE.Scene();  //where we can see the objects
+        var camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 ); // fov:75 aspect ratio
+
+        var renderer = new THREE.WebGLRenderer({ canvas: mycanvas });
+        // renderer.setSize( window.innerWidth, window.innerHeight );
+		renderer.setSize( 1000, 600 );
+         //document.body.appendChild( renderer.domElement );
+
+        var controls = new THREE.OrbitControls( camera );
+
+        camera.position.z = 300;
+        var player = document.getElementById('videoElement');
+        var end_preprocess1 = performance.now();
+       
+		
+
+function init() {
+     
+    //</style>
+	if (flvjs.isSupported()) {
+            var flvPlayer = flvjs.createPlayer({
+                type: 'flv',
+                "isLive": true,//<====== Add this 
+                url: 'http://xxx.xxx.xx.xxx:xx/live?port=xxxx&app=live&stream=test', //<=== self-modifying
+				
+            });
+            flvPlayer.attachMediaElement(videoElement);
+            flvPlayer.load(); //Load
+            flv_start();
+        }
+	
+	
+	//
+	player.setAttribute( 'webkit-playsinline', 'webkit-playsinline' );
+	
+    
+	var start_preprocess2 = performance.now();
+	var geometry = new THREE.SphereBufferGeometry( 500, 60, 40 ); //wrap a equirectangular video onto a sphere and immediately invert the sphere so the         video plays will generate a panorama effect
+	geometry.scale( -1, 1, 1 );
+
+	var texture = new THREE.VideoTexture( player );// videotexture will fetch the current frame of the video element 
+	texture.minFilter = THREE.LinearFilter;
+	texture.format = THREE.RGBFormat;
+
+	var material = new THREE.MeshBasicMaterial( { map: texture } );// create the sphere mesh out of geometry 
+	var mesh = new THREE.Mesh( geometry, material );
+	mesh.rotation.y = -Math.PI / 2;     // make sure the video is centered
+	var tsc = performance.now();
+	scene.add(mesh);   //object in the scene will be rendered
+	
+
+	var end_preprocess2 = performance.now();
+	
+}
+var frame_num = 0;
+var video_flag = false;
+function animate () {
+    
+   // var x = document.getElementById('videoElement').readyState;
+	//var y = document.getElementById('videoElement').HAVE_CURRENT_DATA;
+     stats.update();
+	//console.log("time for each frame"+'  '+x+ '  '+ currentTime); 
+   //if(x>=y)
+	
+	video_flag = true;
+	
+	/*frame_num++;
+	var date = new Date();
+	this.minute =  date.getMinutes();
+    this.second =  date.getSeconds();
+    this.milliSeconds = date.getMilliseconds();
+	
+	var currentTime =this.minute + ':' + this.second + '.' + this.milliSeconds;
+	//console.log("time for each frame"+'  '+frame_num+ '  '+ currentTime);  */
+	
+	
+	console.time("1");
+	renderer.render(scene, camera);//render the scene
+	console.timeEnd("1");
+	
+  
+ 	controls.update();
+	//renderer.render(scene, camera);//render the scene
+	setTimeout( function() {
+
+        requestAnimationFrame( animate );
+
+    }, 1000 / 50 );
+	//requestAnimationFrame(animate);
+};
+           function flv_start() {
+            player.play();
+        }
+
+        function flv_pause() {
+            player.pause();
+        }
+
+        function flv_destroy() {
+            player.pause();
+            player.unload();
+            player.detachMediaElement();
+            player.destroy();
+            player = null;
+        }
+
+        function flv_seekto() {
+            video.currentTime = parseFloat(document.getElementsByName('seekpoint')[0].value);
+        }
+		
+		     function initStats() {
+            var stats = new Stats();
+            //
+            stats.setMode(0); // 0: fps, 1: ms
+            //
+            stats.domElement.style.position = 'absolute';
+            stats.domElement.style.left = '0px';
+            stats.domElement.style.top = '0px';
+            //
+            document.getElementById("Stats-output").appendChild(stats.domElement);
+            return stats;
+        }
+  
+
+init();
+animate();
+		
+		
+		</script>
+		
+		
+	</body>
+</html>
