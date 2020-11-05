@@ -31,7 +31,7 @@ Charger: USB Wall Charger. It is used to charge the camera while working
 
 HDMI cable: UGREEN Micro HDMI Cable
 
-# Requirement & installation 
+# Requirement & instructions 
 
 Before the camera tranfer the video stream to the server, make sure that the server is running and has been rightly configured. 
 
