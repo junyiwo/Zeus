@@ -51,7 +51,7 @@ third, execute the command "project_name.exe --input_dir_base ..\..\ --rig_spec 
 
 For the **server**,
 
-First, download Nginx-1.16.1 and Nginx-http-flv-module, and add the module to Nginx when install the server. 
+First, download Nginx-1.16.1 and [Nginx-http-flv-module] (https://github.com/winshining/nginx-http-flv-module), and add the module to Nginx when install the server. 
 
 Then, configure the "nginx.conf" file to enable the live streaming. You can take the "nginx.conf" in the Server folder as a reference. Please modify the IP address in the file. 
 
