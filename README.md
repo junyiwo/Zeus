@@ -47,7 +47,7 @@ The major code is included in the folder "zeus". They are mainly for video captu
 
 >> Second, redirect the path to the executed file using command "cd X:\..\Release" (X is the disk name, "X:\..\Release" is the path of the executed file)
 
->> Third, execute the command "project_name.exe --input_dir_base ..\..\ --rig_spec rig_spec_try.xml --image_input image_input.xml --out_file out_stitched.jpg"
+>> Third, execute the command "project_name.exe --input_dir_base ..\..\ --rig_spec rig_spec_try.xml --image_input image_input.xml --out_file out_stitched.jpg" to upload the 360 video to the server.
 
 For the **server**,
 
