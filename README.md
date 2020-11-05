@@ -45,7 +45,7 @@ The major code is included in the folder "zeus". They are mainly for video stitc
 
 >> First, open the command prompt
 
->> second, redirect the path to the executed file "X:\..\Release" (X is the disk name)
+>> second, redirect the path to the executed file using command "cd X:\..\Release" (X is the disk name, "X:\..\Release" is the path of the executed file)
 
 >> Third, execute the command "project_name.exe --input_dir_base ..\..\ --rig_spec rig_spec_try.xml --image_input image_input.xml --out_file out_stitched.jpg"
 
