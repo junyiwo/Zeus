@@ -60,7 +60,7 @@ For the **server**,
 
 For the **client component**,
 
-All the files are included in the folder "Player", the "player.js" is a webpage player. It will play the requested 360 video when double clicked it. 
+All the files are included in the folder "Player", the "player.js" is a webpage player. It will play the requested 360 video after double clicked it. 
 
 # Citation
 To cite our paper, please use this Bibtex code:
