@@ -3,7 +3,9 @@ This README file contains the instructions to build our Zeus prototype. The sour
 
 Jun Yi, Md Reazul Islam, Shivang Aggarwal, Dimitrios Koutsonikolas, Y. Charlie Hu and Zhisheng Yan. An Analysis of Delay in Live 360° Video Streaming Systems. In Proceedings of the 28th ACM International Conferenceon Multimedia (MM ’20), 2020. 
 
+# What is Zeus
 
+Zeus is a prototype used to measure the delay of live 360 video streaming systems. Zeus will first capture regular video stream using six GoPro cameras, and stitch them into a 360 video using a laptop. After that, the 360 video will be tranferred to the video server Nginx. The clients can send request to the video server to watch the live video stream. The system pipeline of Zeus can be divided into different tasks, and it allows developers to measure the time cnsumption of each task. 
 
 
 
