@@ -42,13 +42,18 @@ For the camera conponent,
 2. Download Microsoft Visual Studio.
 
 The major code is included in the folder "zeus". They are mainly for video stitching. After buiding the project,
+
 first, open the command prompt
+
 second, redirect the path to the executed file "X:\..\Release" (X is the disk name)
+
 third, execute the command "project_name.exe --input_dir_base ..\..\ --rig_spec rig_spec_try.xml --image_input image_input.xml --out_file out_stitched.jpg"
 
 For the server,
 
-First, download Nginx-1.16.1 and Nginx-http-flv-module, and add the module to Nginx when install the server. Then, configure the "nginx.conf" file to enable the live streaming. You can take the "nginx.conf" in the Server folder as a reference. Please modify the IP address in the file. 
+First, download Nginx-1.16.1 and Nginx-http-flv-module, and add the module to Nginx when install the server. 
+
+Then, configure the "nginx.conf" file to enable the live streaming. You can take the "nginx.conf" in the Server folder as a reference. Please modify the IP address in the file. 
 
 
 
