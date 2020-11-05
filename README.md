@@ -45,7 +45,7 @@ The major code is included in the folder "zeus". They are mainly for video stitc
 
 >> First, open the command prompt
 
->> second, redirect the path to the executed file using command "cd X:\..\Release" (X is the disk name, "X:\..\Release" is the path of the executed file)
+>> Second, redirect the path to the executed file using command "cd X:\..\Release" (X is the disk name, "X:\..\Release" is the path of the executed file)
 
 >> Third, execute the command "project_name.exe --input_dir_base ..\..\ --rig_spec rig_spec_try.xml --image_input image_input.xml --out_file out_stitched.jpg"
 
@@ -63,7 +63,7 @@ For the **client component**,
 All the files are included in the folder "Player", the "player.js" is a webpage player. It will play the requested 360 video when double clicked it. 
 
 # Citation
-To cite our paper, use this Bibtex code:
+To cite our paper, please use this Bibtex code:
 ```
 @inproceedings{yi2020analysis,
   title={An Analysis of Delay in Live 360 Video Streaming Systems},
