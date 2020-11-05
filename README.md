@@ -5,7 +5,7 @@ Jun Yi, Md Reazul Islam, Shivang Aggarwal, Dimitrios Koutsonikolas, Y. Charlie H
 
 # What is Zeus
 
-Zeus is a prototype used to measure the delay of live 360 video streaming systems. Zeus will first capture regular video stream using six GoPro cameras, and stitch them into a 360 video using a laptop. After that, the 360 video will be transferred to the video server Nginx. The clients can send request to the video server to watch the live video. The system pipeline of Zeus can be divided into different tasks, and it allows developers to measure the time cnsumption of each task.  Below is the figure shows our prototype,
+Zeus is a prototype used to measure the delay of live 360 video streaming systems. Zeus will first capture regular video stream using six GoPro cameras, and stitch them into a 360 video using a laptop. After that, the 360 video will be transferred to the video server Nginx. The clients can send request to the video server to watch the live video. The system pipeline of Zeus can be divided into different tasks, and it allows developers to measure the time consumption of each task.  Below is the figure shows our prototype,
 
 ![Prototype](https://github.com/junyiwo/Zeus/blob/master/Image/prototype.png)
 
@@ -22,10 +22,10 @@ to these three delay metrics. Although prior works have studied commercial live 
 - We leverageZeusto perform a comprehensive measurementstudy to dissect the time consumption in live 360°videostreaming and understand how each task affects differentdelay metrics.
 - We perform a comparison ofZeusagainst a commerciallive 360°video streaming system built on Ricoh Theta Vand YouTube and validate that our measurement results arerepresentative of real world systems 
 
-# Hardware configureation
-Camera: GoPro Hero 6 using HDMI ouput. 
+# Hardware configuration
+Camera: GoPro Hero 6 using HDMI output. 
 
-Data converter: USB Capture 4K Plus. The data converter is used to convert the HDMI ouput of the camera into USB, otherwise the cameras cannot connect with the laptop used for stitching.  
+Data converter: USB Capture 4K Plus. The data converter is used to convert the HDMI output of the camera into USB, otherwise, the cameras cannot connect with the laptop used for stitching.  
 
 USB Hub: USB Type-C Multi-Adapter. Due to the limited USB data interfaces of the laptop, we also need to use the type-c interfaces to receive the USB data. 
 
@@ -35,7 +35,7 @@ HDMI cable: UGREEN Micro HDMI Cable
 
 # Requirement & Instructions 
 
-Before the camera tranfer the video stream to the server, make sure that the server is running and has been rightly configured. 
+Before the camera transfer the video stream to the server, make sure that the server is running and has been rightly configured. 
 
 For the **camera component**,
 
@@ -43,7 +43,7 @@ For the **camera component**,
 
 2. Download Microsoft Visual Studio.
 
-The major code is included in the folder "zeus". They are mainly for video capture, stitching, and encoding. After buiding the project,
+The primary code is included in the folder "zeus". They are mainly for video capture, stitching, and encoding. After building the project,
 
 >> First, open the command prompt
 
@@ -53,7 +53,7 @@ The major code is included in the folder "zeus". They are mainly for video captu
 
 For the **server**,
 
->> First, download Nginx-1.16.1 and [Nginx-http-flv-module](https://github.com/winshining/nginx-http-flv-module), and add the module to Nginx when install the server. 
+>> First, download Nginx-1.16.1 and [Nginx-http-flv-module](https://github.com/winshining/nginx-http-flv-module), and add the module to Nginx when installing the server. 
 
 >> Second, configure the "nginx.conf" file to enable the live streaming. You can take the "nginx.conf" in the "Server" folder as a reference. Please modify the IP address in the file. 
 >> Third, restart the Nginx server using command "./installation path of Nginx/nginx -s reload"
