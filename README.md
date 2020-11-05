@@ -35,7 +35,7 @@ HDMI cable: UGREEN Micro HDMI Cable
 
 Before the camera tranfer the video stream to the server, make sure that the server is running and has been rightly configured. 
 
-For the camera conponent,
+For the **camera component**,
 
 1.  Download VRWorks 360 Video SDk.
 
@@ -49,7 +49,7 @@ second, redirect the path to the executed file "X:\..\Release" (X is the disk na
 
 third, execute the command "project_name.exe --input_dir_base ..\..\ --rig_spec rig_spec_try.xml --image_input image_input.xml --out_file out_stitched.jpg"
 
-For the server,
+For the **server**,
 
 First, download Nginx-1.16.1 and Nginx-http-flv-module, and add the module to Nginx when install the server. 
 
@@ -57,7 +57,7 @@ Then, configure the "nginx.conf" file to enable the live streaming. You can take
 
 
 
-For the client component,
+For the **client component**,
 
 All the files are included in the folder "Player", the "player.js" is a webpage player. It will play the requested 360 video when double clicked it. 
 
