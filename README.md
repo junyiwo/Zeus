@@ -41,7 +41,10 @@ For the camera conponent,
 
 2. Download Microsoft Visual Studio.
 
-The major code is included in the folder "zeus". After buiding the project, jump to the 
+The major code is included in the folder "zeus". They are mainly for video stitching. After buiding the project,
+first, open the command prompt
+second, redirect the path to the executed file "X:\..\Release" (X is the disk name)
+third, execute the command "project_name.exe --input_dir_base ..\..\ --rig_spec rig_spec_try.xml --image_input image_input.xml --out_file out_stitched.jpg"
 
 For the server,
 
