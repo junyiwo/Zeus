@@ -37,7 +37,7 @@ Before the camera tranfer the video stream to the server, make sure that the ser
 
 For the **camera component**,
 
-1.  Download VRWorks 360 Video SDk.
+1.  Download VRWorks 360 Video SDK.
 
 2. Download Microsoft Visual Studio.
 
