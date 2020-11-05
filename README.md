@@ -41,7 +41,7 @@ For the **camera component**,
 
 2. Download Microsoft Visual Studio.
 
-The major code is included in the folder "zeus". They are mainly for video stitching. After buiding the project,
+The major code is included in the folder "zeus". They are mainly for video capture, stitching, and encoding. After buiding the project,
 
 >> First, open the command prompt
 
