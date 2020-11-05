@@ -17,10 +17,10 @@ to these three delay metrics. Although prior works have studied commercial live 
 
  Our contributions in this project are:
 
-- We identify the diverse relationship between the time con-sumption breakdown across the system pipeline and thethree delay metrics in live 360° video streaming. 
-- We build an open research prototypeZeususing publiclyavailable hardware and software to enable task-level delaymeasurement. The methodology for buildingZeuscan beutilized in future 360° video research.
-- We leverageZeusto perform a comprehensive measurementstudy to dissect the time consumption in live 360°videostreaming and understand how each task affects differentdelay metrics.
-- We perform a comparison ofZeusagainst a commerciallive 360°video streaming system built on Ricoh Theta Vand YouTube and validate that our measurement results arerepresentative of real world systems 
+- We identify the diverse relationship between the time con-sumption breakdown across the system pipeline and the three delay metrics in live 360° video streaming. 
+- We build an open research prototype Zeus using publicly available hardware and software to enable task-level delaymeasurement. The methodology for building Zeus can be utilized in future 360° video research.
+- We leverage Zeus to perform a comprehensive measurement study to dissect the time consumption in live 360° video streaming and understand how each task affects different delay metrics.
+- We perform a comparison of Zeus against a commerciallive 360° video streaming system built on Ricoh Theta Vand YouTube and validate that our measurement results are representative of real world systems 
 
 # Hardware configuration
 Camera: GoPro Hero 6 using HDMI output. 
@@ -35,7 +35,7 @@ HDMI cable: UGREEN Micro HDMI Cable
 
 # Requirement & Instructions 
 
-Before the camera transfer the video stream to the server, make sure that the server is running and has been rightly configured. 
+Before the camera transfer the video stream to the server, make sure that the server is running and has been configured correctly. 
 
 For the **camera component**,
 
